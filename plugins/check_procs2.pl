@@ -25,6 +25,6 @@ if($stdout =~ m/PROCS\s.*:\s(\d+)\s.*STATE\s=\s(.*)$/) {
         $state = $2;
 }
 # return new data
-print "$stdout|state=$state;procs=$procs;\n";
+print "$stdout|processes=$procs\n";
 exit ($exitCode);
 
