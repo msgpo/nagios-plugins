@@ -16,7 +16,7 @@ my $exitCode = $?;
 # add perfdata
 my $state = "*", my $procs = 0;
 chop $stdout;
-if($stdout =~ m/PROCS\s.*:\s(\d+)\sprocesses/) {
+if($stdout =~ m/PROCS\s.*:\s(\d+)\sprocess/) {
         $procs = $1;
 }
 
