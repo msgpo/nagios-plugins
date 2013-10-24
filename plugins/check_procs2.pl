@@ -11,7 +11,7 @@ for (my $i = 0; $i <=  $#ARGV; $i++) {
 
 # get the return data
 my $stdout = `$cmd`;
-my $exitCode = $?;
+my $exitCode = $? >> 8;
 
 # add perfdata
 my $state = "*", my $procs = 0;
